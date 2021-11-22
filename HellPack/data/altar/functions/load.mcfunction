@@ -1,0 +1,1 @@
+tellraw @a {"text": "what the fuck is happening", "color": "#ffffff"}
