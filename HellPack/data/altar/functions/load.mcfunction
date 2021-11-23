@@ -1,1 +1,1 @@
-tellraw @a {"text": "what the fuck is happening", "color": "#ffffff"}
+tellraw @a {"text": "Loaded successfully", "color": "#ffffff"}
