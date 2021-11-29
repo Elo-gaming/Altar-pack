@@ -1,5 +1,5 @@
-execute as @e[predicate=altar:altar,type=item,nbt={OnGround:1b,Item:{id:"minecraft:diamond",Count:1b}}] run function altar:altar
-execute as @e[scores={omfgsfd=1..}] run function altar:altardeath
+execute as @e[predicate=otherworld:altar,type=item,nbt={OnGround:1b,Item:{id:"minecraft:diamond",Count:1b}}] run function otherworld:altar
+execute as @e[scores={omfgsfd=1..}] run function otherworld:altardeath
 
 
 ###RECIPES
@@ -11,7 +11,7 @@ tag @e[nbt={OnGround:1b,Item:{id:"minecraft:diamond_pickaxe",Count:1b}}] add cra
 
 execute at @e[tag=craft1] as @e[tag=craft2,distance=..1] run summon item ~ ~ ~ {Tags:["itemkill1"],PickupDelay:20,Item:{id:"minecraft:diamond_pickaxe",Count:1b,tag:{display:{Name:"{\"text\":\"test\"}"},HideFlags:1}}}
 
-execute at @e[tag=craft1] as @e[tag=craft2,distance=..1] run function altar:altareffect
+execute at @e[tag=craft1] as @e[tag=craft2,distance=..1] run function otherworld:altareffect
 
 
 execute at @e[tag=itemkill1] run kill @e[tag=craft1,distance=..1]
